@@ -18,7 +18,11 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/auth")
-@CrossOrigin(origins = "http://localhost:5173") // local host 
+@CrossOrigin(origins = {
+    "http://localhost:5173", 
+    "https://authenticator-ss.netlify.app"
+})
+
 public class AuthController {
     private final UserService userService;
     public AuthController(UserService userService) { this.userService = userService; }

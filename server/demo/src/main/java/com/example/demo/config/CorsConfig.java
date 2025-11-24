@@ -1,3 +1,4 @@
+
 package com.example.demo.config;
 
 import org.springframework.context.annotation.Bean;
@@ -13,8 +14,11 @@ public class CorsConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
-                        .allowedOrigins("http://localhost:5173" ,"https://authenticator-ss.netlify.app" )  // React App URL
+                registry.addMapping("/**") // allow all endpoints
+                        .allowedOrigins(
+                            "http://localhost:5173", 
+                            "https://authenticator-ss.netlify.app"
+                        )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
                         .allowCredentials(true);
