@@ -41,7 +41,6 @@ const Forgot = () => {
           </div>
 
           <div className="mt-5">
-            {/*  FIX: added onSubmit */}
             <form onSubmit={handle}>
               <div className="grid gap-y-4">
                 <div>
@@ -61,7 +60,6 @@ const Forgot = () => {
                   />
                 </div>
 
-                {/* FIX: Button keeps submit type  */}
                 <button
                   type="submit"
                   className="py-3 px-4 rounded-md bg-blue-500 text-white hover:bg-blue-600 transition font-semibold"

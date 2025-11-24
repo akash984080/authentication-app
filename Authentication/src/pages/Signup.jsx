@@ -42,7 +42,6 @@ const Signup = () => {
 
               <div>
 
-                {/* First + Last Name */}
                 <div className="flex -mx-3">
                   <div className="w-1/2 px-3 mb-5">
                     <label className="text-xs font-semibold px-1">First Name</label>
@@ -67,7 +66,6 @@ const Signup = () => {
                   </div>
                 </div>
 
-                {/* Email */}
                 <div className="mb-5 px-3">
                   <label className="text-xs font-semibold px-1">Email</label>
                   <input
@@ -79,7 +77,6 @@ const Signup = () => {
                   />
                 </div>
 
-                {/* Password */}
                 <div className="mb-5 px-3">
                   <label className="text-xs font-semibold px-1">Password</label>
                   <input
